@@ -47,7 +47,7 @@ public class EmailController {
 
 
 
-    @PostMapping("/sendEmail")
+    @PostMapping("/sendemail")
     public void sendEmailWithAttachment(@RequestBody EmailRequest emailRequest) throws MessagingException, MessagingException {
         List<String> to = emailRequest.getTo();
         List<String> cc = emailRequest.getCc();
